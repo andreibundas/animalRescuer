@@ -13,6 +13,7 @@ public class App
         Adopter adopter = new Adopter();
         adopter.name = "Aladin";
         adopter.moneyAvailable = 150; // RON
+        adopter.gender = 'M';
 
         Animal animal =new Animal();
         animal.race = "cat";
@@ -23,6 +24,8 @@ public class App
         animal.name = "Garfield";
         animal.stateOfMind = "sober";
         animal.recreationActivity = "watchingTV";
+        animal.gender = 'M';
+
 
         PetFood petfood = new PetFood();
         petfood.name = "pizza";
@@ -37,6 +40,9 @@ public class App
         Veterinarian vet = new Veterinarian();
         vet.name = "Dr. Dolittle";
         vet.specialziation = "cat & dogs";
+        vet.gender = 'M';
+
+
 
 
 

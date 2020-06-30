@@ -1,8 +1,7 @@
 package org.fasttrackit;
 
-public class Veterinarian {
+public class Veterinarian extends Human {
 
-    String name;
     String specialziation;
 
 }

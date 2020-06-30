@@ -1,8 +1,8 @@
 package org.fasttrackit;
 
-public class Animal {
+public class Animal extends LivingBeing {
 
-    String name;
+
     String race;
     double age;
     int healthLevel;
@@ -10,8 +10,6 @@ public class Animal {
     String stateOfMind;  // nivelul stării de spirit
     String favoriteFood;
     String recreationActivity;
-
-
 
 
 }

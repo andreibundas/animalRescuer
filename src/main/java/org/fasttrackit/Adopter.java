@@ -1,8 +1,8 @@
 package org.fasttrackit;
 
-public class Adopter {
+public class Adopter extends Human{
 
-    String name;
+
     int moneyAvailable;
 
 
