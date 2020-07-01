@@ -15,6 +15,10 @@ public class App
         adopter.moneyAvailable = 150; // RON
         adopter.gender = 'M';
 
+        adopter.feed("Cat", "Pizza" );
+
+
+
         Animal animal =new Animal();
         animal.race = "cat";
         animal.age = 3;
@@ -41,6 +45,7 @@ public class App
         vet.name = "Dr. Dolittle";
         vet.specialziation = "cat & dogs";
         vet.gender = 'M';
+
 
 
 
