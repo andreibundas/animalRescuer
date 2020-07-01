@@ -12,6 +12,7 @@ public class Adopter extends Human{
 
     public Adopter() {
         super();
+
     }
 
 
