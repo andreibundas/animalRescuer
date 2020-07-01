@@ -8,4 +8,8 @@ public class LivingBeing {
     public LivingBeing(char gender) {
         this.gender = gender;
     }
+
+    public LivingBeing() {
+
+    }
 }

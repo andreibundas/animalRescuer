@@ -9,4 +9,10 @@ public class Adopter extends Human{
     public Adopter(char gender) {
         super(gender);
     }
+
+    public Adopter() {
+        super();
+    }
+
+
 }

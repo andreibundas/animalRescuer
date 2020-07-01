@@ -7,4 +7,8 @@ public class Veterinarian extends Human {
     public Veterinarian(char gender) {
         super(gender);
     }
+
+    public Veterinarian() {
+
+    }
 }

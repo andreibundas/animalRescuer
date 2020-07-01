@@ -11,4 +11,8 @@ public class PetFood {
     public PetFood(String name) {
         this.name = name;
     }
+
+    public PetFood() {
+
+    }
 }

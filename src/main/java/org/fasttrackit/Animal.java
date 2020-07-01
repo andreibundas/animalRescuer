@@ -15,4 +15,8 @@ public class Animal extends LivingBeing {
     public Animal(char gender) {
         super(gender);
     }
+
+    public Animal() {
+
+    }
 }
