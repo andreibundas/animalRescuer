@@ -12,4 +12,7 @@ public class Animal extends LivingBeing {
     String recreationActivity;
 
 
+    public Animal(char gender) {
+        super(gender);
+    }
 }
