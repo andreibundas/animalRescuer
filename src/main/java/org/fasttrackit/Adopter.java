@@ -14,10 +14,11 @@ public class Adopter extends Human{
         super();
     }
 
-    public void feed (Animal animal,PetFood petfood) {
+    public void feed (Animal animal, PetFood petfood) {
         System.out.println(this.name + " just gave some " + petfood + " food to " + animal);
 
     }
+
 
 
 }

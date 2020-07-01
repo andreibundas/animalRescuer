@@ -15,7 +15,7 @@ public class App
         adopter.moneyAvailable = 150; // RON
         adopter.gender = 'M';
 
-        adopter.feed("Cat", "Pizza" );
+         adopter.feed("Cat", "Pizza" );
 
 
 
