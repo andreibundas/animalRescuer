@@ -9,4 +9,7 @@ public class PetFood {
     boolean availableInStore;
 
 
+    public PetFood(String name) {
+        this.name = name;
+    }
 }

@@ -10,14 +10,17 @@ public class App
     {
         System.out.println( "Hello World!" );
 
-        Adopter adopter = new Adopter();
+        String name = new String();
+        //String name = null;
+
+        char gender = 0;
+        Adopter adopter = new Adopter(name, gender);
         adopter.name = "Aladin";
         adopter.moneyAvailable = 150; // RON
         adopter.gender = 'M';
 
 
-
-        Animal animal =new Animal();
+        Animal animal =new Animal(name);
         animal.race = "cat";
         animal.age = 3;
         animal.favoriteFood = "pizza";
@@ -28,18 +31,18 @@ public class App
         animal.recreationActivity = "watchingTV";
 
 
-
-        PetFood petfood = new PetFood();
+        PetFood petfood = new PetFood(name);
         petfood.name = "pizza";
         petfood.availableInStore = true;
         petfood.price = 25; // RON
         petfood.quantity = 2;
         petfood.expiryDate = "22.07.2020";
 
-        RecreationActivity recractivity = new RecreationActivity();
+        RecreationActivity recractivity = new RecreationActivity(name);
         recractivity.name = "watchingTV";
 
-        Veterinarian vet = new Veterinarian();
+        String specialziation = null;
+        Veterinarian vet = new Veterinarian(name, null);
         vet.name = "Dr. Dolittle";
         vet.specialziation = "cat & dogs";
         vet.smoker = false;

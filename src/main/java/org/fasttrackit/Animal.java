@@ -11,5 +11,7 @@ public class Animal {
     String favoriteFood;
     String recreationActivity;
 
-
+    public Animal(String race) {
+        this.race = race;
+    }
 }
