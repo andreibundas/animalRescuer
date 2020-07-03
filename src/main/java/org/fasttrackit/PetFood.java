@@ -8,11 +8,5 @@ public class PetFood {
     String expiryDate;
     boolean availableInStore;
 
-    public PetFood(String name) {
-        this.name = name;
-    }
 
-    public PetFood() {
-
-    }
 }

@@ -15,8 +15,6 @@ public class App
         adopter.moneyAvailable = 150; // RON
         adopter.gender = 'M';
 
-         adopter.feed("Cat", "Pizza" );
-
 
 
         Animal animal =new Animal();
@@ -28,7 +26,7 @@ public class App
         animal.name = "Garfield";
         animal.stateOfMind = "sober";
         animal.recreationActivity = "watchingTV";
-        animal.gender = 'M';
+
 
 
         PetFood petfood = new PetFood();
@@ -44,14 +42,10 @@ public class App
         Veterinarian vet = new Veterinarian();
         vet.name = "Dr. Dolittle";
         vet.specialziation = "cat & dogs";
-        vet.gender = 'M';
-
-
-
+        vet.smoker = false;
 
 
     }
-
 
 
 }
