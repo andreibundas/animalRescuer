@@ -41,8 +41,8 @@ public class App
         RecreationActivity recractivity = new RecreationActivity(name);
         recractivity.name = "watchingTV";
 
-        String specialziation = null;
-        Veterinarian vet = new Veterinarian(name, null);
+        String specialziation = new String();
+        Veterinarian vet = new Veterinarian(name, specialziation);
         vet.name = "Dr. Dolittle";
         vet.specialziation = "cat & dogs";
         vet.smoker = false;
