@@ -6,11 +6,10 @@ package org.fasttrackit;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args )     {
         System.out.println( "Hello World!" );
 
-        String name = new String();
+        String name = "";
         //String name = null;
 
         char gender = 0;
@@ -19,8 +18,6 @@ public class App
         adopter.moneyAvailable = 150; // RON
         adopter.gender = 'M';
 
-
-        adopter.feed("cat", "pizza");
 
         Animal animal =new Animal(name);
         animal.race = "cat";
@@ -43,16 +40,26 @@ public class App
         RecreationActivity recractivity = new RecreationActivity(name);
         recractivity.name = "watchingTV";
 
-        String specialization = new String();
+        String specialization = "";
         Veterinarian vet = new Veterinarian(name, specialization);
         vet.name = "Dr. Dolittle";
         vet.specialization = "cats & dogs";
         vet.smoker = false;
 
-        
-        adopter.feed("cat", "pizza");
+        // apelare, invocare metoda feed - hranirea animalului
+        adopter.name = "John";
+        petfood.name = "Purina";
+        animal.name = "Chaika";
+
+        adopter.feed(animal, petfood);
 
 
+        // apelare, invocare metoda play - recreerea animalului
+        adopter.name = "Tom";
+        recractivity.name = "walking";
+        animal.name = "Johns";
+
+        adopter.play(animal, recractivity);
 
     }
 
