@@ -2,11 +2,11 @@ package org.fasttrackit;
 
 public class Veterinarian extends Human {
 
-    String specialziation;
+    String specialization;
     boolean smoker;
 
-    public Veterinarian(String name, String specialziation) {
+    public Veterinarian(String name, String specialization) {
         super(name);
-        this.specialziation = specialziation;
+        this.specialization = specialization;
     }
 }

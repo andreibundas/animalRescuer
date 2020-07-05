@@ -20,6 +20,8 @@ public class App
         adopter.gender = 'M';
 
 
+        adopter.feed("cat", "pizza");
+
         Animal animal =new Animal(name);
         animal.race = "cat";
         animal.age = 3;
@@ -41,11 +43,15 @@ public class App
         RecreationActivity recractivity = new RecreationActivity(name);
         recractivity.name = "watchingTV";
 
-        String specialziation = new String();
-        Veterinarian vet = new Veterinarian(name, specialziation);
+        String specialization = new String();
+        Veterinarian vet = new Veterinarian(name, specialization);
         vet.name = "Dr. Dolittle";
-        vet.specialziation = "cat & dogs";
+        vet.specialization = "cats & dogs";
         vet.smoker = false;
+
+        
+        adopter.feed("cat", "pizza");
+
 
 
     }
