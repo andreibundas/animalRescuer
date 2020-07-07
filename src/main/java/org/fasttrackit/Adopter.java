@@ -18,18 +18,31 @@ public class Adopter extends Human{
 
         System.out.println("After feeding the animal, the hunger level becomes : " + animal.hungerLevel);
 
+        if(petfood.name.equals(animal.favoriteFood)) {  //  if(petfood.name == animal.favoriteFood)
+            animal.stateOfMind += 1;
+            System.out.println("The animal's stateOfMind rises to : " + animal.stateOfMind);
+        }
+
+
     }
     // declararea metodei play -> recreerea animalului
     public void play (Animal animal, RecreationActivity recreationActivity) {
         System.out.println(super.name + " enjoys " +
                 recreationActivity.name + " in the park with his beloved dog " + animal.name);
 
-        animal.stateOfMind = "happy";
+        animal.stateOfMind = 8;
 
         System.out.println("After the walk, the animal's stateOfMind becomes : " +
                 "" + animal.stateOfMind);
+        if(recreationActivity.name.equals(animal.favoriteRecreationActivity)) {   // if(recreationActivity.name == animal.favoriteRecreationActivity)
+            animal.stateOfMind += 2;
+            System.out.println("The animal's stateOfMind jumps to : " + animal.stateOfMind);
+        } else {
+            animal.stateOfMind += 1;
+            System.out.println("The animal's stateOfMind rises to : " + animal.stateOfMind);
+        }
+
 
     }
-
 
 }

@@ -7,10 +7,10 @@ public class Animal {
     double age;
     int healthLevel;
     int hungerLevel;
-    String stateOfMind;  // nivelul stării de spirit
+    int stateOfMind;  // nivelul stării de spirit
     String favoriteFood;
-    String recreationActivity;
-
+//    String recreationActivity;
+    String favoriteRecreationActivity;
     public Animal(String race) {
         this.race = race;
     }

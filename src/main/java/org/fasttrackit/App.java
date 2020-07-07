@@ -26,8 +26,9 @@ public class App
         animal.healthLevel = 9;
         animal.hungerLevel = 10;
         animal.name = "Garfield";
-        animal.stateOfMind = "sober";
-        animal.recreationActivity = "watchingTV";
+        animal.stateOfMind = 5;
+        animal.favoriteRecreationActivity = "watchingTV";
+
 
 
         PetFood petfood = new PetFood(name);
@@ -50,6 +51,7 @@ public class App
         adopter.name = "John";
         petfood.name = "Purina";
         animal.name = "Chaika";
+        petfood.name = "pizza";
 
         adopter.feed(animal, petfood);
 
@@ -58,7 +60,7 @@ public class App
         adopter.name = "Tom";
         recractivity.name = "walking";
         animal.name = "Johns";
-
+        recractivity.name = "watchingTV";
         adopter.play(animal, recractivity);
 
     }
