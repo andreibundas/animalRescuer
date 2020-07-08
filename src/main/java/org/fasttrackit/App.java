@@ -14,53 +14,53 @@ public class App
 
         char gender = 0;
         Adopter adopter = new Adopter(name, gender);
-        adopter.name = "Aladin";
-        adopter.moneyAvailable = 150; // RON
-        adopter.gender = 'M';
+        adopter.setName("Aladin");
+        adopter.setMoneyAvailable(150); // RON
+        adopter.setGender('M');
 
 
         Animal animal =new Animal(name);
-        animal.race = "cat";
-        animal.age = 3;
-        animal.favoriteFood = "pizza";
-        animal.healthLevel = 9;
-        animal.hungerLevel = 10;
-        animal.name = "Garfield";
-        animal.stateOfMind = 5;
-        animal.favoriteRecreationActivity = "watchingTV";
+        animal.setRace("cat");
+        animal.setAge(3);
+        animal.setFavoriteFood("pizza");
+        animal.setHealthLevel(9);
+        animal.setHungerLevel(10);
+        animal.setName("Garfield");
+        animal.setStateOfMind(5);
+        animal.setFavoriteRecreationActivity("watching TV");
 
 
 
         PetFood petfood = new PetFood(name);
-        petfood.name = "pizza";
-        petfood.availableInStore = true;
-        petfood.price = 25; // RON
-        petfood.quantity = 2;
-        petfood.expiryDate = "22.07.2020";
+        petfood.setName("pizza");
+        petfood.setAvailableInStore(true);
+        petfood.setPrice(25); // RON
+        petfood.setQuantity(2);
+        petfood.setExpiryDate("22.07.2020");
 
         RecreationActivity recractivity = new RecreationActivity(name);
-        recractivity.name = "watchingTV";
+        recractivity.setName("watchingTV");
 
         String specialization = "";
         Veterinarian vet = new Veterinarian(name, specialization);
-        vet.name = "Dr. Dolittle";
-        vet.specialization = "cats & dogs";
-        vet.smoker = false;
+        vet.setName("Dr. Dolittle");
+        vet.setSpecialization("cats & dogs");
+        vet.setSmoker(false);
 
         // apelare, invocare metoda feed - hranirea animalului
-        adopter.name = "John";
-        petfood.name = "Purina";
-        animal.name = "Chaika";
-        petfood.name = "pizza";
+        adopter.setName("John");
+        petfood.setName("Purina");
+        animal.setName("Chaika");
+        petfood.setName("pizza");
 
         adopter.feed(animal, petfood);
 
 
         // apelare, invocare metoda play - recreerea animalului
-        adopter.name = "Tom";
-        recractivity.name = "walking";
-        animal.name = "Johns";
-        recractivity.name = "watchingTV";
+        adopter.setName("Tom");
+        recractivity.setName("walking");
+        animal.setName("Johns");
+        recractivity.setName("watching TV");
         adopter.play(animal, recractivity);
 
     }
