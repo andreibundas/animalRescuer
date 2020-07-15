@@ -19,14 +19,14 @@ public class App
         adopter.setGender('M');
 
 
-        Animal animal =new Animal(name);
+        Animal animal =new Animal("unknown", 5);
         animal.setRace("cat");
         animal.setAge(3);
         animal.setFavoriteFood("pizza");
         animal.setHealthLevel(9);
         animal.setHungerLevel(10);
         animal.setName("Garfield");
-        animal.setStateOfMind(5);
+//        animal.setStateOfMind(5);
         animal.setFavoriteRecreationActivity("watching TV");
 
 
@@ -62,6 +62,19 @@ public class App
         animal.setName("Johns");
         recractivity.setName("watching TV");
         adopter.play(animal, recractivity);
+
+        // apelare metoda stare spirit animal
+        animal.happiness();
+
+        // apelare metoda stare spirit - Dog
+        Dog dog = new Dog("Coker", 8);
+        dog.happiness();
+
+        // apelare metoda stare spirit - Cat
+        Cat cat = new Cat("Siameese", 7);
+        cat.happiness();
+
+
 
     }
 

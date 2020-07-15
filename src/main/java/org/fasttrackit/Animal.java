@@ -12,8 +12,17 @@ public class Animal {
 //    String recreationActivity;
     private String favoriteRecreationActivity;
 
-    public Animal(String race) {
+    //  constructor
+    public Animal(String race, int stateOfMind) {
         this.race = race;
+        this.stateOfMind = stateOfMind;
+    }
+
+    //metoda stare spirit animal
+    public void happiness() {
+        if(stateOfMind > 5) {
+            System.out.println("The animal is happy");
+        }
     }
 
     public String getName() {
